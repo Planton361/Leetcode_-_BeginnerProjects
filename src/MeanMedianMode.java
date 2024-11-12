@@ -49,7 +49,8 @@ class MeanMedianModeController {
                     meanMedianModeView.announceMessage(String.valueOf(mode));
                     break;
                 case 3:
-
+                    double median = meanMedianModeModel.medianOfList(numbers);
+                    meanMedianModeView.announceMessage(String.valueOf(median));
                     break;
             }
 
@@ -148,6 +149,20 @@ class MeanMedianModeModel {
     public double medianOfList(double[] arrayOfNumbers) {
         double median = 0;
 
+        int n = arrayOfNumbers.length;
+        double temp;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arrayOfNumbers[j] > arrayOfNumbers[j + 1]) {
+                    // Swap array[j] and array[j+1]
+                    temp = arrayOfNumbers[j];
+                    arrayOfNumbers[j] = arrayOfNumbers[j + 1];
+                    arrayOfNumbers[j + 1] = temp;
+                }
+            }
+        }
+
+        median = arrayOfNumbers[arrayOfNumbers.length / 2];
         return median;
     }
 
