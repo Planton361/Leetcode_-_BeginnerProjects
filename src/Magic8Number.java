@@ -19,10 +19,11 @@ import java.util.Scanner;
 public class Magic8Number {
 
     public static void main(String[] args) throws InterruptedException {
-        controller();
+        magic8NumberController();
+
     }
 
-    public static void controller() throws InterruptedException {
+    public static void magic8NumberController() throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
 
         boolean continueLoop = true;
@@ -38,48 +39,31 @@ public class Magic8Number {
     public static void enterQuestion(Scanner scanner) throws InterruptedException {
         System.out.println("Ich bin ein magischer 8 Ball, was ist deine Frage?");
         String question = scanner.nextLine();
-        System.out.println("Thinking...");
-        Thread.sleep(3000);
+        System.out.print("Thinking");
+        for (int i = 0; i < 3; i++) {
+            Thread.sleep(500);
+            System.out.print(".");
+        }
+        Thread.sleep(1000);
+        System.out.println();
     }
 
     public static void processQuestion() {
         Random random = new Random();
         int number = random.nextInt(10);
-
-        switch (number) {
-            case 0:
-                System.out.println("Es ist sicher.");
-                break;
-            case 1:
-                System.out.println("Frage später erneut.");
-                break;
-            case 2:
-                System.out.println("Ohne Zweifel.");
-                break;
-            case 3:
-                System.out.println("Darauf kannst du dich verlassen.");
-                break;
-            case 4:
-                System.out.println("Meine Antwort ist nein.");
-                break;
-            case 5:
-                System.out.println("Sehr wahrscheinlich.");
-                break;
-            case 6:
-                System.out.println("Unklar, versuche es erneut.");
-                break;
-            case 7:
-                System.out.println("Besser nicht jetzt.");
-                break;
-            case 8:
-                System.out.println("Ziemlich unsicher.");
-                break;
-            case 9:
-                System.out.println("Die Zeichen stehen auf Ja.");
-                break;
-        }
-
-
+        String[] answers = new String[]{
+                "Es ist sicher.",
+                "Frage später erneut.",
+                "Ohne Zweifel.",
+                "Darauf kannst du dich verlassen.",
+                "Meine Antwort ist nein.",
+                "Sehr wahrscheinlich.",
+                "Unklar, versuche es erneut.",
+                "Besser nicht jetzt.",
+                "Ziemlich unsicher.",
+                "Die Zeichen stehen auf Ja."
+        };
+        System.out.println(answers[number] +"\n");
     }
 
     public static boolean nextAction(Scanner scanner) {
