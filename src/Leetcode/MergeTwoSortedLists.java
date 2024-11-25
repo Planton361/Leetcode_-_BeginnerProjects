@@ -11,7 +11,8 @@ public class MergeTwoSortedLists {
 class Solution21{
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
-
+        ListNode ListNode = null;
+        return ListNode;
     }
 }
 
