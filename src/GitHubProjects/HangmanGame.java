@@ -1,3 +1,5 @@
+package GitHubProjects;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -28,7 +30,7 @@ class HangmanGameController {
 
         hangmanGameView.announceMessage(HangmanGameView.WELCOME_MESSAGE);
 
-        hangmanGameModel.RandomWordGenerator("C:\\Users\\anton\\Desktop\\HangmanGame.txt");
+        hangmanGameModel.RandomWordGenerator("C:\\Users\\anton\\Desktop\\GitHubProjects.HangmanGame.txt");
         String chosenWord = hangmanGameModel.getRandomWord();
         hangmanGameModel.initializeHashMapforWord(chosenWord);
 
@@ -91,7 +93,7 @@ class HangmanGameController {
 
 class HangmanGameView {
 
-    public static final String WELCOME_MESSAGE = "Welcome to the HangmanGame.\nYou can start by guessing a letter of the word";
+    public static final String WELCOME_MESSAGE = "Welcome to the GitHubProjects.HangmanGame.\nYou can start by guessing a letter of the word";
     public static final String WINNER_MESSAGE = "The word is correct. You won. Good Job";
     public static final String WRONG_WORD_MESSAGE = "The word is not correct, i will deduct two tries";
     public static final String OPTION_MESSAGE = "Your turn\n1.Guess character (Cost: 1 try)\n2.Guess word(Cost:2 tries)\n3.Give up";

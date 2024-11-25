@@ -1,4 +1,4 @@
-/*Magic 8 Ball
+package GitHubProjects;/*Magic 8 Ball
 Simulate a magic 8-ball.
 Allow the user to enter their question.
 Display an in progress message(i.e. "thinking").

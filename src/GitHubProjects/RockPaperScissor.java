@@ -1,3 +1,5 @@
+package GitHubProjects;
+
 import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
@@ -9,17 +11,17 @@ public class RockPaperScissor {
 }
 
 class Game {
-    Player player1 = new Player(0, "Player 1", false);
-    Player player2 = new Player(0, "Player 2", true);
+    Player player1 = new Player(0, "GitHubProjects.Player 1", false);
+    Player player2 = new Player(0, "GitHubProjects.Player 2", true);
 
     public Game(Scanner scanner) throws InterruptedException {
         boolean continueGame = true;
         while (continueGame) {
             System.out.println("Willkommen bei Schere, Stein, Papier");
             printScores();
-            System.out.println("Wähle deine Optionen Player 1: Schere, Stein, Papier");
+            System.out.println("Wähle deine Optionen GitHubProjects.Player 1: Schere, Stein, Papier");
             player1.setPick(scanner);
-            System.out.println("Wähle deine Optionen Player 2: Schere, Stein, Papier");
+            System.out.println("Wähle deine Optionen GitHubProjects.Player 2: Schere, Stein, Papier");
             player2.setPick(scanner);
             printPicks();
             Thread.sleep(3000);
@@ -63,8 +65,8 @@ class Game {
     }
 
     public void printPicks() {
-        System.out.println("Player 1: " + player1.getPick());
-        System.out.println("Player 2: " + player2.getPick());
+        System.out.println("GitHubProjects.Player 1: " + player1.getPick());
+        System.out.println("GitHubProjects.Player 2: " + player2.getPick());
     }
 }
 

@@ -1,3 +1,5 @@
+package GitHubProjects;
+
 import java.util.HashMap;
 import java.util.Scanner;
 

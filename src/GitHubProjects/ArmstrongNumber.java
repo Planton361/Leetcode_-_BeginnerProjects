@@ -1,3 +1,5 @@
+package GitHubProjects;
+
 public class ArmstrongNumber {
 
 

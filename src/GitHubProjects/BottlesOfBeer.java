@@ -1,3 +1,5 @@
+package GitHubProjects;
+
 public class BottlesOfBeer {
 
     private static final int TOTAL_BOTTLES = 99;

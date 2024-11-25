@@ -1,4 +1,4 @@
-/*Mean, Median, and Mode
+package GitHubProjects;/*Mean, Median, and Mode
 In a set of numbers, the mean is the average, the mode is the number that occurs the most, and if you rearrange all the numbers numerically, the median is the number in the middle.
 
 Create three functions that allow the user to find the mean, median, and mode of a list of numbers. If you have access or know of functions that already complete these tasks, do not use them.
@@ -72,7 +72,7 @@ class MeanMedianModeController {
 
 class MeanMedianModeView {
     Scanner scanner = new Scanner(System.in);
-    public static final String WELCOME_MESSAGE = "Welcome! In this program you can get the MeanMedianMode of your given numbers.";
+    public static final String WELCOME_MESSAGE = "Welcome! In this program you can get the GitHubProjects.MeanMedianMode of your given numbers.";
     public static final String CONTINUE_PROGRAM = "Do you want to continue?\nPress 1 for yes.\nPress 0 for no.";
     public static final String OPTIONS_PROGRAM = "What do you want to do with the numbers?\n1 for average\n2 for mode\n3 for Median";
     public static final String GOODBYE_MESSAGE = "Leaving the program, thanks for using.";

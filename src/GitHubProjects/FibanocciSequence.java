@@ -1,3 +1,5 @@
+package GitHubProjects;
+
 import java.util.Scanner;
 
 public class FibanocciSequence {

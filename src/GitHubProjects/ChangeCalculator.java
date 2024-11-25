@@ -1,3 +1,5 @@
+package GitHubProjects;
+
 import java.util.EnumMap;
 import java.util.Locale;
 import java.util.Scanner;
